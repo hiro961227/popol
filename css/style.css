@@ -8,11 +8,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
-}
-
-::-webkit-scrollbar {
-  width: 0px;
+  overflow: hidden;
 }
 
 div, article, ul, li, span, p, a, b, h1, h2, h3, h4, h5, h6 {
@@ -31,7 +27,7 @@ a {
 aside {
   position: fixed;
   right: -1%;
-  top: 5%;
+  top: 0%;
   z-index: 100;
   width: 10%;
   font-family: 'Ubuntu', sans-serif;
@@ -42,7 +38,7 @@ aside {
 
 aside a {
   display: block;
-  padding-bottom: 80%;
+  padding: 50% 0;
   color: #99a4be;
 }
 
@@ -50,15 +46,24 @@ aside .in {
   color: #495161;
 }
 
-.openmain {
+main .articlelist {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transform: 1.2s;
+          transform: 1.2s;
+}
+
+main .articlelist article {
+  display: block;
   position: relative;
   width: 100%;
   height: 100vh;
-  overflow: hidden;
   background: linear-gradient(55deg, #e1cbe3, #cbdbfe);
 }
 
-.openmain .twinkle {
+main .articlelist .openmain .twinkle {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -67,7 +72,7 @@ aside .in {
   z-index: 5;
 }
 
-.openmain .twinkle span:nth-of-type(1) {
+main .articlelist .openmain .twinkle span:nth-of-type(1) {
   position: absolute;
   left: 30%;
   top: 30%;
@@ -115,7 +120,7 @@ aside .in {
   }
 }
 
-.openmain .twinkle span:nth-of-type(2) {
+main .articlelist .openmain .twinkle span:nth-of-type(2) {
   position: absolute;
   left: 51%;
   top: 52%;
@@ -163,7 +168,7 @@ aside .in {
   }
 }
 
-.openmain .twinkle span:nth-of-type(3) {
+main .articlelist .openmain .twinkle span:nth-of-type(3) {
   position: absolute;
   left: 40%;
   top: 42%;
@@ -211,7 +216,7 @@ aside .in {
   }
 }
 
-.openmain .twinkle span:nth-of-type(4) {
+main .articlelist .openmain .twinkle span:nth-of-type(4) {
   position: absolute;
   left: 34%;
   top: 51%;
@@ -259,7 +264,7 @@ aside .in {
   }
 }
 
-.openmain .twinkle span:nth-of-type(5) {
+main .articlelist .openmain .twinkle span:nth-of-type(5) {
   position: absolute;
   left: 62%;
   top: 42%;
@@ -307,7 +312,7 @@ aside .in {
   }
 }
 
-.openmain .twinkle span:nth-of-type(6) {
+main .articlelist .openmain .twinkle span:nth-of-type(6) {
   position: absolute;
   left: 71%;
   top: 54%;
@@ -355,7 +360,7 @@ aside .in {
   }
 }
 
-.openmain .twinkle span:nth-of-type(7) {
+main .articlelist .openmain .twinkle span:nth-of-type(7) {
   position: absolute;
   left: 69%;
   top: 35%;
@@ -403,7 +408,7 @@ aside .in {
   }
 }
 
-.openmain .protfolio {
+main .articlelist .openmain .protfolio {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -414,7 +419,7 @@ aside .in {
   font-weight: bold;
 }
 
-.openmain .protfolio label {
+main .articlelist .openmain .protfolio label {
   text-shadow: 4px 6px 8px rgba(95, 103, 128, 0.8);
   color: #323a4c;
   background: -webkit-gradient(linear, left top, left bottom, from(#fbe7ff), to(#473f69));
@@ -423,7 +428,7 @@ aside .in {
   -webkit-text-fill-color: transparent;
 }
 
-.openmain .protfolio label:nth-of-type(1) {
+main .articlelist .openmain .protfolio label:nth-of-type(1) {
   font-size: 18em;
   position: absolute;
   left: 10%;
@@ -431,7 +436,7 @@ aside .in {
   z-index: 2;
 }
 
-.openmain .protfolio label:nth-of-type(2) {
+main .articlelist .openmain .protfolio label:nth-of-type(2) {
   font-size: 12em;
   position: absolute;
   left: 15%;
@@ -439,21 +444,21 @@ aside .in {
   z-index: 1;
 }
 
-.openmain .protfolio label:nth-of-type(3) {
+main .articlelist .openmain .protfolio label:nth-of-type(3) {
   font-size: 10.5em;
   position: absolute;
   left: 20%;
   top: 8%;
 }
 
-.openmain .protfolio label:nth-of-type(4) {
+main .articlelist .openmain .protfolio label:nth-of-type(4) {
   font-size: 12em;
   position: absolute;
   left: 24%;
   top: 0%;
 }
 
-.openmain .protfolio label:nth-of-type(5) {
+main .articlelist .openmain .protfolio label:nth-of-type(5) {
   font-size: 16em;
   position: absolute;
   left: 27.5%;
@@ -461,14 +466,14 @@ aside .in {
   z-index: 1;
 }
 
-.openmain .protfolio label:nth-of-type(6) {
+main .articlelist .openmain .protfolio label:nth-of-type(6) {
   font-size: 12em;
   position: absolute;
   left: 32%;
   top: 8%;
 }
 
-.openmain .protfolio label:nth-of-type(7) {
+main .articlelist .openmain .protfolio label:nth-of-type(7) {
   font-size: 13.5em;
   position: absolute;
   left: 38%;
@@ -476,21 +481,21 @@ aside .in {
   z-index: 1;
 }
 
-.openmain .protfolio label:nth-of-type(8) {
+main .articlelist .openmain .protfolio label:nth-of-type(8) {
   font-size: 12.5em;
   position: absolute;
   left: 43%;
   top: 0%;
 }
 
-.openmain .protfolio label:nth-of-type(9) {
+main .articlelist .openmain .protfolio label:nth-of-type(9) {
   font-size: 12em;
   position: absolute;
   left: 45%;
   top: 5%;
 }
 
-.openmain .allmain {
+main .articlelist .openmain .allmain {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -498,7 +503,7 @@ aside .in {
   z-index: 1;
 }
 
-.openmain .allmain .backwhiteup {
+main .articlelist .openmain .allmain .backwhiteup {
   position: absolute;
   left: -50%;
   top: -85%;
@@ -535,7 +540,7 @@ aside .in {
   }
 }
 
-.openmain .allmain .backwhitedown {
+main .articlelist .openmain .allmain .backwhitedown {
   position: absolute;
   left: 100%;
   top: 90%;
@@ -572,15 +577,7 @@ aside .in {
   }
 }
 
-.projectmain {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 100vh;
-  background: linear-gradient(55deg, #e1cbe3, #cbdbfe);
-}
-
-.projectmain .allmain {
+main .articlelist .projectmain .allmain {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -588,7 +585,7 @@ aside .in {
   z-index: 1;
 }
 
-.projectmain .allmain .backwhiteup {
+main .articlelist .projectmain .allmain .backwhiteup {
   position: absolute;
   left: 47%;
   top: 110%;
@@ -625,7 +622,7 @@ aside .in {
   }
 }
 
-.projectmain .allmain .backwhitedown {
+main .articlelist .projectmain .allmain .backwhitedown {
   position: absolute;
   left: 80%;
   top: 120%;
@@ -662,56 +659,171 @@ aside .in {
   }
 }
 
-.projectmain .projectimg {
+main .articlelist .projectmain .navigator {
+  width: 50%;
+  height: 20vh;
+  position: absolute;
+  left: 45%;
+  top: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 2;
+}
+
+main .articlelist .projectmain .navigator a {
+  width: 10%;
+  height: 4%;
+  margin-right: 5%;
+  background: -webkit-gradient(linear, right top, left top, from(#e0e4f5), color-stop(#fff), to(#e0e4f5));
+  background: linear-gradient(to left, #e0e4f5, #fff, #e0e4f5);
+}
+
+main .articlelist .projectmain .navigator a span {
+  font-size: 0;
+}
+
+main .articlelist .projectmain .navigator .on {
+  background: -webkit-gradient(linear, right top, left top, from(#bfc6eb), color-stop(#495161), to(#bfc6eb));
+  background: linear-gradient(to left, #bfc6eb, #495161, #bfc6eb);
+}
+
+main .articlelist .projectmain .projectimg {
   width: 100%;
-  height: 100%;
   z-index: 2;
   position: absolute;
   left: 15.4%;
   top: 27%;
 }
 
-.projectmain .projectsub {
+@-webkit-keyframes moving {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  25% {
+    opacity: .5;
+  }
+  50% {
+    -webkit-transform: translate(0, -80%);
+            transform: translate(0, -80%);
+    opacity: 0;
+  }
+  75% {
+    -webkit-transform: translate(0, 150%);
+            transform: translate(0, 150%);
+    opacity: 0;
+  }
+  90% {
+    opacity: .5;
+  }
+  100% {
+    -webkit-transform: translate(0, 0%);
+            transform: translate(0, 0%);
+    opacity: 1;
+  }
+}
+
+@keyframes moving {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  25% {
+    opacity: .5;
+  }
+  50% {
+    -webkit-transform: translate(0, -80%);
+            transform: translate(0, -80%);
+    opacity: 0;
+  }
+  75% {
+    -webkit-transform: translate(0, 150%);
+            transform: translate(0, 150%);
+    opacity: 0;
+  }
+  90% {
+    opacity: .5;
+  }
+  100% {
+    -webkit-transform: translate(0, 0%);
+            transform: translate(0, 0%);
+    opacity: 1;
+  }
+}
+
+main .articlelist .projectmain .projectsub {
   width: 60%;
-  height: 100%;
+  height: 30%;
   display: block;
   z-index: 5;
   position: absolute;
   left: 40%;
-  top: 33%;
+  top: 35%;
 }
 
-.projectmain .projectsub .story {
+main .articlelist .projectmain .projectsub .story {
   width: 100%;
   text-align: center;
   white-space: pre-line;
   font-family: 'Noto Sans KR', sans-serif;
 }
 
-.projectmain .projectsub .story p {
-  padding-top: 1%;
-}
-
-.projectmain .projectsub .btn {
+main .articlelist .projectmain .projectsub .btn {
   width: 100%;
   display: block;
   text-align: center;
 }
 
-.projectmain .projectsub .btn p {
+main .articlelist .projectmain .projectsub .btn p {
   display: inline-block;
   margin: 0 3%;
 }
 
-.projectmain .projectsub .btn button {
+main .articlelist .projectmain .projectsub .btn button {
   width: 150px;
   height: 40px;
   border: none;
+  position: relative;
+  overflow: hidden;
   background: #e1cbe3;
-  color: #495161;
 }
 
-.projectmain .lineandcircle {
+main .articlelist .projectmain .projectsub .btn button a {
+  width: 100%;
+  height: 100%;
+  color: #495161;
+  z-index: 1;
+  position: relative;
+}
+
+main .articlelist .projectmain .projectsub .btn button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150px;
+  height: 150px;
+  border-radius: 80%;
+  -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+  -webkit-transition: opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1), transform 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1), transform 0.75s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+  background: linear-gradient(-125deg, #e1cbe3, #cbdbfe);
+  opacity: 0;
+}
+
+main .articlelist .projectmain .projectsub .btn button:hover::before {
+  opacity: 1;
+  -webkit-transition-duration: .8s;
+          transition-duration: .8s;
+  -webkit-transform: translate3d(-50%, -50%, 0) scale3d(1.5, 1.5, 1.5);
+          transform: translate3d(-50%, -50%, 0) scale3d(1.5, 1.5, 1.5);
+}
+
+main .articlelist .projectmain .lineandcircle {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -719,10 +831,10 @@ aside .in {
   top: 0;
 }
 
-.projectmain .lineandcircle .line {
+main .articlelist .projectmain .lineandcircle .line {
   position: absolute;
   left: 0;
-  top: 30%;
+  top: 33%;
   width: 100%;
   height: 300px;
   border: 1px solid #fff;
@@ -731,12 +843,12 @@ aside .in {
           box-shadow: 15px 15px 50px rgba(72, 75, 95, 0.5);
 }
 
-.projectmain .lineandcircle .allcircle {
+main .articlelist .projectmain .lineandcircle .allcircle {
   width: 100%;
   height: 100%;
 }
 
-.projectmain .lineandcircle .allcircle .circle {
+main .articlelist .projectmain .lineandcircle .allcircle .circle {
   position: absolute;
   left: 12%;
   top: 15%;
@@ -747,7 +859,7 @@ aside .in {
   background: #fff;
 }
 
-.projectmain .lineandcircle .allcircle .circleborder {
+main .articlelist .projectmain .lineandcircle .allcircle .circleborder {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -755,7 +867,7 @@ aside .in {
   top: 0;
 }
 
-.projectmain .lineandcircle .allcircle .circleborder .border1 {
+main .articlelist .projectmain .lineandcircle .allcircle .circleborder .border1 {
   position: absolute;
   left: 32%;
   top: 26%;
@@ -768,7 +880,7 @@ aside .in {
   border-radius: 30px;
 }
 
-.projectmain .lineandcircle .allcircle .circleborder .border1::after {
+main .articlelist .projectmain .lineandcircle .allcircle .circleborder .border1::after {
   content: '';
   font-size: 0;
   position: absolute;
@@ -783,7 +895,7 @@ aside .in {
   background: linear-gradient(55deg, #e1cbe3, #cbdbfe);
 }
 
-.projectmain .lineandcircle .allcircle .circleborder .border1::before {
+main .articlelist .projectmain .lineandcircle .allcircle .circleborder .border1::before {
   content: '';
   font-size: 0;
   position: absolute;
@@ -796,7 +908,7 @@ aside .in {
   background: linear-gradient(55deg, #e1cbe3, #cbdbfe);
 }
 
-.projectmain .lineandcircle .allcircle .circleborder .border2 {
+main .articlelist .projectmain .lineandcircle .allcircle .circleborder .border2 {
   position: absolute;
   left: 37%;
   top: 23%;
@@ -809,7 +921,7 @@ aside .in {
   border-radius: 30px;
 }
 
-.projectmain .lineandcircle .allcircle .circleborder .border3 {
+main .articlelist .projectmain .lineandcircle .allcircle .circleborder .border3 {
   position: absolute;
   left: 14%;
   top: 70%;
@@ -822,7 +934,7 @@ aside .in {
   border-radius: 30px;
 }
 
-.projectmain .lineandcircle .allcircle .circleborder .border3::after {
+main .articlelist .projectmain .lineandcircle .allcircle .circleborder .border3::after {
   content: '';
   font-size: 0;
   position: absolute;
@@ -837,7 +949,7 @@ aside .in {
   background: linear-gradient(55deg, #e1cbe3, #cbdbfe);
 }
 
-.projectmain .lineandcircle .allcircle .circleborder .border4 {
+main .articlelist .projectmain .lineandcircle .allcircle .circleborder .border4 {
   position: absolute;
   left: 17%;
   top: 73%;
@@ -850,7 +962,7 @@ aside .in {
   border-radius: 30px;
 }
 
-.projectmain .lineandcircle .allcircle .circleborder .border4::after {
+main .articlelist .projectmain .lineandcircle .allcircle .circleborder .border4::after {
   content: '';
   font-size: 0;
   position: absolute;
@@ -863,15 +975,37 @@ aside .in {
   background: linear-gradient(55deg, #e1cbe3, #cbdbfe);
 }
 
-.clickopen {
+main .articlelist .hiddennav {
+  opacity: 0;
+  width: 10%;
+  z-index: 10;
+  position: fixed;
+  left: 2%;
+  top: 3%;
+}
+
+main .articlelist .hiddennav .navigator a {
+  font-family: 'Ubuntu', sans-serif;
+  padding: 5%;
+  display: inline-block;
+  font-size: 1.2em;
+  color: #99a4be;
+}
+
+main .articlelist .hiddennav .navigator .on {
+  font-size: 1.3em;
+  color: #495161;
+}
+
+main .articlelist .clickopen {
+  display: none;
   width: 100%;
   height: 240%;
-  position: relative;
   background: -webkit-gradient(linear, left bottom, left top, from(#e1cbe3), to(#cbdbfe));
   background: linear-gradient(to top, #e1cbe3, #cbdbfe);
 }
 
-.clickopen .allmain {
+main .articlelist .clickopen .allmain {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -879,7 +1013,7 @@ aside .in {
   z-index: 1;
 }
 
-.clickopen .allmain .backwhiteup {
+main .articlelist .clickopen .allmain .backwhiteup {
   position: absolute;
   left: 47%;
   top: 110%;
@@ -914,7 +1048,7 @@ aside .in {
   }
 }
 
-.clickopen .allmain .backwhitedown {
+main .articlelist .clickopen .allmain .backwhitedown {
   position: absolute;
   left: 80%;
   top: 120%;
@@ -949,25 +1083,83 @@ aside .in {
   }
 }
 
-.clickopen .pjstand {
+main .articlelist .clickopen .up {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  -webkit-animation: move 1.2s infinite ease-in-out;
+          animation: move 1.2s infinite ease-in-out;
+}
+
+main .articlelist .clickopen .up span {
+  position: relative;
+}
+
+main .articlelist .clickopen .up span::after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  border-top: 5px solid #fff;
+  border-right: 5px solid #fff;
+  display: inline-block;
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+@-webkit-keyframes move {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(0, -18%);
+            transform: translate(0, -18%);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@keyframes move {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(0, -18%);
+            transform: translate(0, -18%);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+main .articlelist .clickopen .pjstand {
   width: 100%;
-  height: 20%;
+  height: 30vh;
   display: block;
   position: relative;
 }
 
-.clickopen .pjstand .projectimg {
+main .articlelist .clickopen .pjstand .projectimg {
   z-index: 2;
   position: absolute;
   left: 40.2%;
   top: 28%;
 }
 
-.clickopen .pjstand .projectimg img {
+main .articlelist .clickopen .pjstand .projectimg img {
   width: 70%;
 }
 
-.clickopen .pjstand .lineandcircle {
+main .articlelist .clickopen .pjstand .lineandcircle {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -975,10 +1167,10 @@ aside .in {
   top: 0%;
 }
 
-.clickopen .pjstand .lineandcircle .line {
+main .articlelist .clickopen .pjstand .lineandcircle .line {
   position: absolute;
   left: 0;
-  top: 40%;
+  top: 50%;
   width: 100%;
   height: 180px;
   border: 1px solid #fff;
@@ -987,15 +1179,15 @@ aside .in {
           box-shadow: 15px 15px 50px rgba(72, 75, 95, 0.5);
 }
 
-.clickopen .pjstand .lineandcircle .allcircle {
+main .articlelist .clickopen .pjstand .lineandcircle .allcircle {
   width: 100%;
   height: 100%;
 }
 
-.clickopen .pjstand .lineandcircle .allcircle .circle {
+main .articlelist .clickopen .pjstand .lineandcircle .allcircle .circle {
   position: absolute;
   left: 38%;
-  top: 40%;
+  top: 50%;
   -webkit-transform: translate(0, -30%);
           transform: translate(0, -30%);
   width: 450px;
@@ -1005,7 +1197,7 @@ aside .in {
   background: #fff;
 }
 
-.clickopen .pjstand .lineandcircle .allcircle .circleborder {
+main .articlelist .clickopen .pjstand .lineandcircle .allcircle .circleborder {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -1013,10 +1205,10 @@ aside .in {
   top: 0%;
 }
 
-.clickopen .pjstand .lineandcircle .allcircle .circleborder .border1 {
+main .articlelist .clickopen .pjstand .lineandcircle .allcircle .circleborder .border1 {
   position: absolute;
-  left: 48%;
-  top: 28%;
+  left: 49%;
+  top: 36%;
   width: 200px;
   height: 20px;
   -webkit-transform: rotate(-45deg) translate(0, 0%);
@@ -1026,7 +1218,7 @@ aside .in {
   border-radius: 30px;
 }
 
-.clickopen .pjstand .lineandcircle .allcircle .circleborder .border1::after {
+main .articlelist .clickopen .pjstand .lineandcircle .allcircle .circleborder .border1::after {
   content: '';
   font-size: 0;
   position: absolute;
@@ -1041,7 +1233,7 @@ aside .in {
   background: linear-gradient(55deg, #e1cbe3, #cbdbfe);
 }
 
-.clickopen .pjstand .lineandcircle .allcircle .circleborder .border1::before {
+main .articlelist .clickopen .pjstand .lineandcircle .allcircle .circleborder .border1::before {
   content: '';
   font-size: 0;
   position: absolute;
@@ -1054,10 +1246,10 @@ aside .in {
   background: linear-gradient(55deg, #e1cbe3, #cbdbfe);
 }
 
-.clickopen .pjstand .lineandcircle .allcircle .circleborder .border2 {
+main .articlelist .clickopen .pjstand .lineandcircle .allcircle .circleborder .border2 {
   position: absolute;
-  left: 52%;
-  top: 24%;
+  left: 53%;
+  top: 32%;
   width: 200px;
   height: 20px;
   -webkit-transform: rotate(-45deg);
@@ -1067,10 +1259,10 @@ aside .in {
   border-radius: 30px;
 }
 
-.clickopen .pjstand .lineandcircle .allcircle .circleborder .border3 {
+main .articlelist .clickopen .pjstand .lineandcircle .allcircle .circleborder .border3 {
   position: absolute;
   left: 38%;
-  top: 96%;
+  top: 120%;
   width: 240px;
   height: 20px;
   -webkit-transform: rotate(-45deg);
@@ -1080,7 +1272,7 @@ aside .in {
   border-radius: 30px;
 }
 
-.clickopen .pjstand .lineandcircle .allcircle .circleborder .border3::after {
+main .articlelist .clickopen .pjstand .lineandcircle .allcircle .circleborder .border3::after {
   content: '';
   font-size: 0;
   position: absolute;
@@ -1095,10 +1287,10 @@ aside .in {
   background: linear-gradient(55deg, #e1cbe3, #cbdbfe);
 }
 
-.clickopen .pjstand .lineandcircle .allcircle .circleborder .border4 {
+main .articlelist .clickopen .pjstand .lineandcircle .allcircle .circleborder .border4 {
   position: absolute;
   left: 42%;
-  top: 96%;
+  top: 125%;
   width: 200px;
   height: 20px;
   -webkit-transform: rotate(-45deg);
@@ -1108,7 +1300,7 @@ aside .in {
   border-radius: 30px;
 }
 
-.clickopen .pjstand .lineandcircle .allcircle .circleborder .border4::after {
+main .articlelist .clickopen .pjstand .lineandcircle .allcircle .circleborder .border4::after {
   content: '';
   font-size: 0;
   position: absolute;
@@ -1121,7 +1313,7 @@ aside .in {
   background: linear-gradient(55deg, #e1cbe3, #cbdbfe);
 }
 
-.clickopen .projectsub {
+main .articlelist .clickopen .projectsub {
   width: 100%;
   height: 80%;
   display: block;
@@ -1129,60 +1321,94 @@ aside .in {
   font-family: 'Noto Sans KR', sans-serif;
 }
 
-.clickopen .projectsub .story {
+main .articlelist .clickopen .projectsub .story {
   width: 100%;
   text-align: center;
   white-space: pre-line;
 }
 
-.clickopen .projectsub .story h1 {
+main .articlelist .clickopen .projectsub .story h1 {
   padding-top: 5%;
   font-size: 1.5em;
 }
 
-.clickopen .projectsub .story p {
+main .articlelist .clickopen .projectsub .story p {
   font-size: 1.1em;
 }
 
-.clickopen .projectsub .btn {
+main .articlelist .clickopen .projectsub .btn {
   width: 100%;
   display: block;
   padding: 1.8%;
   text-align: center;
 }
 
-.clickopen .projectsub .btn p {
+main .articlelist .clickopen .projectsub .btn p {
   display: inline-block;
   margin: 0 3%;
 }
 
-.clickopen .projectsub .btn button {
+main .articlelist .clickopen .projectsub .btn button {
   width: 180px;
   height: 40px;
   border: none;
   background: #495161;
   margin-right: 4%;
+  position: relative;
+  overflow: hidden;
 }
 
-.clickopen .projectsub .btn button span {
-  color: #fff;
+main .articlelist .clickopen .projectsub .btn button a {
+  color: #f9e7fb;
+  z-index: 1;
+  position: relative;
 }
 
-.clickopen .projectsub .site {
+main .articlelist .clickopen .projectsub .btn button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150px;
+  height: 150px;
+  border-radius: 80%;
+  -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+  -webkit-transition: opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1), transform 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1), transform 0.75s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+  background: linear-gradient(-125deg, #e1cbe3, #cbdbfe);
+  opacity: 0;
+}
+
+main .articlelist .clickopen .projectsub .btn button:hover a {
+  color: #495161;
+}
+
+main .articlelist .clickopen .projectsub .btn button:hover::before {
+  opacity: 1;
+  -webkit-transition-duration: .8s;
+          transition-duration: .8s;
+  -webkit-transform: translate3d(-50%, -50%, 0) scale3d(1.5, 1.5, 1.5);
+          transform: translate3d(-50%, -50%, 0) scale3d(1.5, 1.5, 1.5);
+}
+
+main .articlelist .clickopen .projectsub .site {
   width: 100%;
   display: block;
   text-align: center;
   padding-bottom: 3%;
 }
 
-.clickopen .projectsub .site h1 {
+main .articlelist .clickopen .projectsub .site h1 {
   width: 100%;
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 2em;
   padding: 6% 0 3% 0;
 }
 
-.clickopen .projectsub .site .pagebtn {
+main .articlelist .clickopen .projectsub .site .pagebtn {
   width: 40%;
   display: block;
   margin: 0 auto;
@@ -1190,29 +1416,63 @@ aside .in {
   padding-left: 2%;
 }
 
-.clickopen .projectsub .site .pagebtn p {
+main .articlelist .clickopen .projectsub .site .pagebtn p {
   display: inline-block;
   margin: 0 3%;
 }
 
-.clickopen .projectsub .site .pagebtn button {
+main .articlelist .clickopen .projectsub .site .pagebtn button {
   width: 180px;
   height: 40px;
   margin-bottom: 5%;
   border: none;
   background: #495161;
   margin-right: 4%;
+  position: relative;
+  overflow: hidden;
 }
 
-.clickopen .projectsub .site .pagebtn button span {
-  color: #fff;
+main .articlelist .clickopen .projectsub .site .pagebtn button a {
+  color: #f9e7fb;
+  z-index: 1;
+  position: relative;
 }
 
-.clickopen .projectsub .language {
+main .articlelist .clickopen .projectsub .site .pagebtn button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150px;
+  height: 150px;
+  border-radius: 80%;
+  -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+  -webkit-transition: opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1), transform 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1), transform 0.75s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+  background: linear-gradient(-125deg, #e1cbe3, #cbdbfe);
+  opacity: 0;
+}
+
+main .articlelist .clickopen .projectsub .site .pagebtn button:hover a {
+  color: #495161;
+}
+
+main .articlelist .clickopen .projectsub .site .pagebtn button:hover::before {
+  opacity: 1;
+  -webkit-transition-duration: .8s;
+          transition-duration: .8s;
+  -webkit-transform: translate3d(-50%, -50%, 0) scale3d(1.5, 1.5, 1.5);
+          transform: translate3d(-50%, -50%, 0) scale3d(1.5, 1.5, 1.5);
+}
+
+main .articlelist .clickopen .projectsub .language {
   padding-top: 2%;
 }
 
-.clickopen .projectsub .language h1 {
+main .articlelist .clickopen .projectsub .language h1 {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 2em;
   display: block;
@@ -1220,7 +1480,7 @@ aside .in {
   padding: 3% 0 3% 0;
 }
 
-.clickopen .projectsub .language ul {
+main .articlelist .clickopen .projectsub .language ul {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1231,15 +1491,15 @@ aside .in {
       justify-content: space-around;
 }
 
-.clickopen .projectsub .language ul li {
+main .articlelist .clickopen .projectsub .language ul li {
   padding-left: 5%;
 }
 
-.clickopen .projectsub .language ul li img {
+main .articlelist .clickopen .projectsub .language ul li img {
   width: 25%;
 }
 
-.clickopen .projectsub .datapage {
+main .articlelist .clickopen .projectsub .datapage {
   width: 70%;
   padding-top: 10%;
   margin: 0 auto;
@@ -1251,26 +1511,18 @@ aside .in {
           justify-content: space-between;
 }
 
-.clickopen .projectsub .datapage h1 {
+main .articlelist .clickopen .projectsub .datapage h1 {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 2em;
 }
 
-.clickopen .projectsub .datapage p {
+main .articlelist .clickopen .projectsub .datapage p {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 1.1em;
   white-space: pre-line;
 }
 
-.aboutme {
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
-  background: linear-gradient(55deg, #e1cbe3, #cbdbfe);
-}
-
-.aboutme .allmain {
+main .articlelist .skill .allmain {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1278,7 +1530,263 @@ aside .in {
   z-index: 1;
 }
 
-.aboutme .allmain .backwhiteup {
+main .articlelist .skill .allmain .backwhiteup {
+  position: absolute;
+  left: 47%;
+  top: 110%;
+  width: 200%;
+  height: 300%;
+  background-color: #fff;
+  -webkit-transform: rotate(-55deg);
+          transform: rotate(-55deg);
+  -webkit-box-shadow: 15px 15px 50px rgba(72, 75, 95, 0.5);
+          box-shadow: 15px 15px 50px rgba(72, 75, 95, 0.5);
+  -webkit-animation: movebox3 .8s 2s forwards ease-in-out;
+          animation: movebox3 .8s 2s forwards ease-in-out;
+}
+
+@keyframes movebox3 {
+  0% {
+    -webkit-transform: translate(0, 0) rotate(-55deg);
+            transform: translate(0, 0) rotate(-55deg);
+  }
+  100% {
+    -webkit-transform: translate(-107%, -104%) rotate(-55deg);
+            transform: translate(-107%, -104%) rotate(-55deg);
+  }
+}
+
+main .articlelist .skill .allmain .backwhitedown {
+  position: absolute;
+  left: 80%;
+  top: 120%;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  -webkit-transform: rotate(-55deg);
+          transform: rotate(-55deg);
+  -webkit-box-shadow: 15px 15px 50px rgba(72, 75, 95, 0.5);
+          box-shadow: 15px 15px 50px rgba(72, 75, 95, 0.5);
+  -webkit-animation: movebox4 .8s 2s forwards ease-in-out;
+          animation: movebox4 .8s 2s forwards ease-in-out;
+}
+
+@keyframes movebox4 {
+  0% {
+    -webkit-transform: translate(0, 0) rotate(-55deg);
+            transform: translate(0, 0) rotate(-55deg);
+  }
+  100% {
+    -webkit-transform: translate(-25%, -15.5%) rotate(-55deg);
+            transform: translate(-25%, -15.5%) rotate(-55deg);
+  }
+}
+
+main .articlelist .skill .skillstory {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+main .articlelist .skill .skillstory .pentagon {
+  z-index: 10;
+  position: absolute;
+  left: 11%;
+  top: 12%;
+  width: 700px;
+  height: 700px;
+  display: inline-block;
+}
+
+main .articlelist .skill .skillstory .pentagon canvas {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-right: 3%;
+}
+
+main .articlelist .skill .skillstory .myskillstory {
+  z-index: 10;
+  width: 80%;
+  position: absolute;
+  left: 50%;
+  top: 36%;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+main .articlelist .skill .skillstory .myskillstory h1 {
+  font-size: 45px;
+}
+
+main .articlelist .skill .skillstory .myskillstory p {
+  font-size: 1.1em;
+  white-space: pre-line;
+}
+
+main .articlelist .skill .lineandcircle {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+main .articlelist .skill .lineandcircle .line {
+  position: absolute;
+  left: 0;
+  top: 33%;
+  width: 100%;
+  height: 300px;
+  border: 1px solid #fff;
+  background: #fff;
+  -webkit-box-shadow: 15px 15px 50px rgba(72, 75, 95, 0.5);
+          box-shadow: 15px 15px 50px rgba(72, 75, 95, 0.5);
+}
+
+main .articlelist .skill .lineandcircle .allcircle {
+  width: 100%;
+  height: 100%;
+}
+
+main .articlelist .skill .lineandcircle .allcircle .circle {
+  position: absolute;
+  left: 12%;
+  top: 15%;
+  width: 650px;
+  height: 650px;
+  border: 1px solid #fff;
+  border-radius: 80%;
+  background: #fff;
+}
+
+main .articlelist .skill .lineandcircle .allcircle .circleborder {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+main .articlelist .skill .lineandcircle .allcircle .circleborder .border1 {
+  position: absolute;
+  left: 32%;
+  top: 26%;
+  width: 200px;
+  height: 20px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  border: 2px solid #fff;
+  background: linear-gradient(55deg, #e1cbe3, #cbdbfe);
+  border-radius: 30px;
+}
+
+main .articlelist .skill .lineandcircle .allcircle .circleborder .border1::after {
+  content: '';
+  font-size: 0;
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  -webkit-transform: translate(15px, -60px);
+          transform: translate(15px, -60px);
+  width: 24px;
+  height: 24px;
+  border: 2px solid #fff;
+  border-radius: 80%;
+  background: linear-gradient(55deg, #e1cbe3, #cbdbfe);
+}
+
+main .articlelist .skill .lineandcircle .allcircle .circleborder .border1::before {
+  content: '';
+  font-size: 0;
+  position: absolute;
+  left: 105%;
+  top: 0%;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #fff;
+  border-radius: 80%;
+  background: linear-gradient(55deg, #e1cbe3, #cbdbfe);
+}
+
+main .articlelist .skill .lineandcircle .allcircle .circleborder .border2 {
+  position: absolute;
+  left: 37%;
+  top: 23%;
+  width: 200px;
+  height: 20px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  border: 2px solid #fff;
+  background: linear-gradient(55deg, #e1cbe3, #cbdbfe);
+  border-radius: 30px;
+}
+
+main .articlelist .skill .lineandcircle .allcircle .circleborder .border3 {
+  position: absolute;
+  left: 14%;
+  top: 70%;
+  width: 240px;
+  height: 20px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  border: 2px solid #fff;
+  background: linear-gradient(55deg, #e1cbe3, #cbdbfe);
+  border-radius: 30px;
+}
+
+main .articlelist .skill .lineandcircle .allcircle .circleborder .border3::after {
+  content: '';
+  font-size: 0;
+  position: absolute;
+  left: 40%;
+  top: 0%;
+  -webkit-transform: translate(-10px, -60px);
+          transform: translate(-10px, -60px);
+  width: 24px;
+  height: 24px;
+  border: 2px solid #fff;
+  border-radius: 80%;
+  background: linear-gradient(55deg, #e1cbe3, #cbdbfe);
+}
+
+main .articlelist .skill .lineandcircle .allcircle .circleborder .border4 {
+  position: absolute;
+  left: 17%;
+  top: 73%;
+  width: 200px;
+  height: 20px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  border: 2px solid #fff;
+  background: linear-gradient(55deg, #e1cbe3, #cbdbfe);
+  border-radius: 30px;
+}
+
+main .articlelist .skill .lineandcircle .allcircle .circleborder .border4::after {
+  content: '';
+  font-size: 0;
+  position: absolute;
+  left: -20%;
+  top: -18%;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #fff;
+  border-radius: 80%;
+  background: linear-gradient(55deg, #e1cbe3, #cbdbfe);
+}
+
+main .articlelist .aboutme .allmain {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: none;
+  z-index: 1;
+}
+
+main .articlelist .aboutme .allmain .backwhiteup {
   position: absolute;
   left: 47%;
   top: 110%;
@@ -1304,7 +1812,7 @@ aside .in {
   }
 }
 
-.aboutme .allmain .backwhitedown {
+main .articlelist .aboutme .allmain .backwhitedown {
   position: absolute;
   left: 80%;
   top: 120%;
@@ -1330,7 +1838,7 @@ aside .in {
   }
 }
 
-.aboutme .lineandcircle {
+main .articlelist .aboutme .lineandcircle {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -1338,7 +1846,7 @@ aside .in {
   top: 0;
 }
 
-.aboutme .lineandcircle .line {
+main .articlelist .aboutme .lineandcircle .line {
   position: absolute;
   left: 0;
   top: 45%;
@@ -1350,12 +1858,12 @@ aside .in {
           box-shadow: 15px 15px 50px rgba(72, 75, 95, 0.5);
 }
 
-.aboutme .lineandcircle .allcircle {
+main .articlelist .aboutme .lineandcircle .allcircle {
   width: 100%;
   height: 100%;
 }
 
-.aboutme .lineandcircle .allcircle .circle {
+main .articlelist .aboutme .lineandcircle .allcircle .circle {
   position: absolute;
   left: 52%;
   top: 31%;
@@ -1366,7 +1874,7 @@ aside .in {
   background: #fff;
 }
 
-.aboutme .lineandcircle .allcircle .circleborder {
+main .articlelist .aboutme .lineandcircle .allcircle .circleborder {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -1374,7 +1882,7 @@ aside .in {
   top: 0;
 }
 
-.aboutme .lineandcircle .allcircle .circleborder .border1 {
+main .articlelist .aboutme .lineandcircle .allcircle .circleborder .border1 {
   position: absolute;
   left: 67%;
   top: 37%;
@@ -1387,7 +1895,7 @@ aside .in {
   border-radius: 30px;
 }
 
-.aboutme .lineandcircle .allcircle .circleborder .border1::after {
+main .articlelist .aboutme .lineandcircle .allcircle .circleborder .border1::after {
   content: '';
   font-size: 0;
   position: absolute;
@@ -1402,7 +1910,7 @@ aside .in {
   background: linear-gradient(55deg, #e1cbe3, #cbdbfe);
 }
 
-.aboutme .lineandcircle .allcircle .circleborder .border1::before {
+main .articlelist .aboutme .lineandcircle .allcircle .circleborder .border1::before {
   content: '';
   font-size: 0;
   position: absolute;
@@ -1415,7 +1923,7 @@ aside .in {
   background: linear-gradient(55deg, #e1cbe3, #cbdbfe);
 }
 
-.aboutme .lineandcircle .allcircle .circleborder .border2 {
+main .articlelist .aboutme .lineandcircle .allcircle .circleborder .border2 {
   position: absolute;
   left: 71%;
   top: 36%;
@@ -1428,7 +1936,7 @@ aside .in {
   border-radius: 30px;
 }
 
-.aboutme .lineandcircle .allcircle .circleborder .border3 {
+main .articlelist .aboutme .lineandcircle .allcircle .circleborder .border3 {
   position: absolute;
   left: 55%;
   top: 85%;
@@ -1441,7 +1949,7 @@ aside .in {
   border-radius: 30px;
 }
 
-.aboutme .lineandcircle .allcircle .circleborder .border3::after {
+main .articlelist .aboutme .lineandcircle .allcircle .circleborder .border3::after {
   content: '';
   font-size: 0;
   position: absolute;
@@ -1456,7 +1964,7 @@ aside .in {
   background: linear-gradient(55deg, #e1cbe3, #cbdbfe);
 }
 
-.aboutme .lineandcircle .allcircle .circleborder .border4 {
+main .articlelist .aboutme .lineandcircle .allcircle .circleborder .border4 {
   position: absolute;
   left: 60%;
   top: 84%;
@@ -1469,7 +1977,7 @@ aside .in {
   border-radius: 30px;
 }
 
-.aboutme .lineandcircle .allcircle .circleborder .border4::after {
+main .articlelist .aboutme .lineandcircle .allcircle .circleborder .border4::after {
   content: '';
   font-size: 0;
   position: absolute;
@@ -1482,11 +1990,11 @@ aside .in {
   background: linear-gradient(55deg, #e1cbe3, #cbdbfe);
 }
 
-.aboutme .myimg {
+main .articlelist .aboutme .myimg {
   width: 100%;
 }
 
-.aboutme .myimg img {
+main .articlelist .aboutme .myimg img {
   width: 360px;
   z-index: 6;
   position: absolute;
@@ -1494,13 +2002,13 @@ aside .in {
   top: 25.8%;
 }
 
-.aboutme .myimg .letmove {
+main .articlelist .aboutme .myimg .letmove {
   width: 100%;
   height: 100%;
   z-index: 3;
 }
 
-.aboutme .myimg .letmove span:nth-of-type(1) {
+main .articlelist .aboutme .myimg .letmove span:nth-of-type(1) {
   width: 80px;
   height: 80px;
   position: absolute;
@@ -1512,7 +2020,7 @@ aside .in {
   border-radius: 80%;
 }
 
-.aboutme .myimg .letmove span:nth-of-type(2) {
+main .articlelist .aboutme .myimg .letmove span:nth-of-type(2) {
   width: 50px;
   height: 50px;
   position: absolute;
@@ -1524,7 +2032,7 @@ aside .in {
   border-radius: 80%;
 }
 
-.aboutme .myimg .letmove span:nth-of-type(3) {
+main .articlelist .aboutme .myimg .letmove span:nth-of-type(3) {
   width: 65px;
   height: 65px;
   position: absolute;
@@ -1536,7 +2044,7 @@ aside .in {
   border-radius: 80%;
 }
 
-.aboutme .myimg .letmove span:nth-of-type(4) {
+main .articlelist .aboutme .myimg .letmove span:nth-of-type(4) {
   width: 15px;
   height: 15px;
   position: absolute;
@@ -1588,7 +2096,7 @@ aside .in {
   }
 }
 
-.aboutme .myimg .letmove span:nth-of-type(5) {
+main .articlelist .aboutme .myimg .letmove span:nth-of-type(5) {
   width: 45px;
   height: 45px;
   position: absolute;
@@ -1600,7 +2108,7 @@ aside .in {
   border-radius: 80%;
 }
 
-.aboutme .myimg .letmove span:nth-of-type(6) {
+main .articlelist .aboutme .myimg .letmove span:nth-of-type(6) {
   width: 10px;
   height: 10px;
   position: absolute;
@@ -1651,7 +2159,7 @@ aside .in {
   }
 }
 
-.aboutme .myimg .letmove span:nth-of-type(7) {
+main .articlelist .aboutme .myimg .letmove span:nth-of-type(7) {
   width: 15px;
   height: 15px;
   position: absolute;
@@ -1702,7 +2210,7 @@ aside .in {
   }
 }
 
-.aboutme .myimg .letmove span:nth-of-type(8) {
+main .articlelist .aboutme .myimg .letmove span:nth-of-type(8) {
   width: 8px;
   height: 8px;
   position: absolute;
@@ -1754,7 +2262,7 @@ aside .in {
   }
 }
 
-.aboutme .mysub {
+main .articlelist .aboutme .mysub {
   width: 22%;
   font-family: 'Noto Sans KR', sans-serif;
   z-index: 3;
@@ -1764,26 +2272,30 @@ aside .in {
   line-height: 1.2;
 }
 
-.aboutme .mysub .name h1 {
+main .articlelist .aboutme .mysub .name h1 {
   font-size: 3.5em;
   font-weight: bold;
 }
 
-.aboutme .mysub .name span {
+main .articlelist .aboutme .mysub .name span {
   font-size: 1.5em;
 }
 
-.aboutme .mysub .name p {
+main .articlelist .aboutme .mysub .name p {
   font-size: 1.3em;
   white-space: pre-line;
 }
 
-.aboutme .mysub .callme {
+main .articlelist .aboutme .mysub .callme {
   text-align: right;
 }
 
-.aboutme .mysub .callme span {
+main .articlelist .aboutme .mysub .callme span {
   font-size: 1.5em;
   white-space: pre-line;
+}
+
+main .allmain {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
