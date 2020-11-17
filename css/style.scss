@@ -31,7 +31,7 @@ aside{
     font-size:1.2em;
     a{
         display:block;
-        padding:50% 0;
+        padding:48% 0;
         color:#99a4be;
     }
     .in{color:#495161;}
@@ -331,7 +331,7 @@ main{
                         25%{ opacity: .5;}
                         50%{transform: translate(0,-80%); opacity: 0;}
                         75%{transform: translate(0,150%); opacity: 0;}
-                        90%{opacity: .5;}
+                        80%{opacity: .5;}
                         100%{transform: translate(0,0%); opacity: 1;}
                     }
                 }
@@ -383,7 +383,7 @@ main{
                         transition-duration: .8s;
                         transform: translate3d(-50%,-50%,0) scale3d(1.5,1.5,1.5);
                     }
-                }
+                }                
             }
             .lineandcircle{
                 width:100%; height: 100%;
@@ -520,7 +520,7 @@ main{
 
         .clickopen{
             display:none;
-            width:100%; height:240%;    
+            width:100%; height:280%;    
             background: linear-gradient(to top, #e1cbe3, #cbdbfe );
             .allmain{
                 position: absolute;

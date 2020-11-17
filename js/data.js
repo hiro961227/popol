@@ -1,4 +1,5 @@
 //scroll
+//project에서 moer 버튼 누르면 스크롤이벤트 멈춰서 스크롤y생길수있게
 $(document).ready(function(){
 //s
 
@@ -160,11 +161,16 @@ $(function(){
                     $('.projectmain .navigator a, .hiddennav .navigator a').removeClass('on');
                     $(".projectmain .navigator a[href='"+code+"'], .hiddennav .navigator a[href='"+code+"']").addClass('on');
                     
+
+                    $('.projectmain .navigator a').click(function(){
+                      $('.projectmain .projectimg img').css({
+                        animation: "moving .6s forwards ease-in-out"
+                      });
+                    });
                 });
             //
             }
                 funList('p01');
-                
 
                 $('.projectmain .btn #more').click(function(){                
                     $('.clickopen').css({display:"block"});
@@ -174,12 +180,7 @@ $(function(){
                     $('.clickopen').css({display:"none"});
                     $('.hiddennav').css({opacity:"0"});
                 });
-                $('.projectmain .navigator a').click(function(){
-                  $('.projectmain .projectimg img').css({
-                    animation: "moving .8s forwards ease-in-out"
-                  });
-                });
-                   
+                                   
                 $('.projectmain .navigator a,.hiddennav .navigator a').on('click',changePage);
 
                 var idx = 0;
@@ -341,4 +342,33 @@ $(function(){
 
     //e
 });
-//
+
+//mouseevent
+$(document).ready(function() {
+	elementAlign();
+	function elementAlign() {
+		var imageHolderSize = $(window).width() / 4;
+		var halfWindowHeight = $(window).height() / 4;
+		var halfWindowWidth = $(window).width() / 4;
+		$(".aboutme .myimg")
+			.css("width", imageHolderSize)
+			.css("height", imageHolderSize);
+		$(".aboutme .myimg").css("margin-top", halfWindowHeight - imageHolderSize / 2);
+		$(".aboutme .myimg").css("margin-left", halfWindowWidth - imageHolderSize / 2);
+	}
+	$(window).on("resize", function() {
+		elementAlign();
+	});
+});
+$(document).on("mousemove", function(event) {
+	var window_height = $(this).height();
+	var window_width = $(this).width();
+	var mouseXpos = event.clientX;
+	var mouseYpos = event.clientY;
+	var YrotateDeg = (window_width / 10 - mouseXpos) * 0.09;
+	var XrotateDeg = (window_height / 12 - mouseYpos) * -0.09;
+	$(".letmove span").css({
+    transform:"rotateX(" + XrotateDeg + "deg) rotateY(" + YrotateDeg + "deg)",
+    zIndex:"20"
+  });
+});
